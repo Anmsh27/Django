@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+about page
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="header">this is about page</h1>
+
+<button id="btn2">
+Hello
+</button>
+
+<p>
+    My contact num: {{ my_number }}
+</p>
+
+<ul>
+    {% for my_list_item in my_list %}
+        <li>{{ my_list_item }}</li>
+    {% endfor %}
+</ul>
+
+<style>
+
+    #btn2 {
+        background-color: black;
+        color: white;
+    }
+
+
+
+</style>
+
+{% endblock %}
